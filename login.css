@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.center-content{
+    height: 500px !important;
+    width: 1000px !important;
+}
+.but_border{
+    width: 280px !important;
+    box-shadow: 0 0 12px 12px grey;
+    border-radius: 20px;
+    position: relative;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0.4,0.4,0.4,url('images/login_back.jpg')));
+}
+.total-div{
+    height: 500px;
+    width: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.input-grp{
+    width: 1200px !important;
+    transition: 0.5s;
+    position: absolute;
+}
+input[type="text"]{
+    width: 250px !important;
+    border-top-style: none !important;
+    border-left-style: none !important;
+}
+.resize-img{
+    height: 500px !important;
+}
+.margin-close{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.toggle_btn{
+    cursor: pointer;
+    position: relative;
+    padding: 10px 45px;
+    background:none;
+    border: 0;
+    outline: none;
+}
+.top_but{
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    border-radius: 20px !important;
+    width: 130px !important;
+    background-color: white;
+    transition: 0.5s;
+}
+#login{
+    left: 5px !important;
+}
+#signup{
+    left: 500px !important;
+}

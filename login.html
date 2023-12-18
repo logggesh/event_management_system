@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Details</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="center-content d-flex mx-auto">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-8 ">
+                            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                                <div class="carousel-inner margin-close">
+                                  <div class="carousel-item active">
+                                    <img src="images/1.jpg" class="d-block resize-img" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="images/2.jpg" class="d-block resize-img" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="images/3.jpg" class="d-block resize-img" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="images/4.jpg" class="d-block resize-img" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>                
+                        </div>
+                        <div class="col-lg-4">
+                            
+                            <div class="tot">
+                           <div class="total-div" id="tot_col_change"> 
+                            <div class="but_border d-flex mx-auto">
+                                <div class="top_but d-flex justify-content-center" id="top_move"></div>
+                                <button class="toggle_btn" id="logbutid" onclick="loginmove()">Login</button>
+                                <button class="toggle_btn" id="signbutid" onclick="signupmove()">Sign Up</button>
+                            </div>
+                            <h4 class="mt-4 text-center">WELCOME</h4>
+                            <form id="loginf" class="input-grp">
+                                <input type="text" class="form-control mt-5 bx-alter ms-5" placeholder="E-Mail" name="email" required>
+                                <input type="text" placeholder="Password" class="form-control bx-alter mt-5" name="Password" required>
+                                <br>
+                                <input type="submit" class="btn btn-success">
+                            </form>
+                            <form id="signupf" class="input-grp">
+                                <input type="text" class="form-control mt-3 bx-alter"   placeholder="Name" name="email" required>
+                                <input type="text" class="form-control mt-3 bx-alter" placeholder="Mobile Number" name="email" required>
+                                <input type="text" class="form-control mt-3 bx-alter" placeholder="E-Mail" name="email" required>
+                                <input type="text" class="form-control mt-3 bx-alter" placeholder="Password" name="Password" required>
+                                <input type="text" class="form-control mt-3 bx-alter" placeholder="Confirm-Password" name="email" required>
+                                <br>
+                                <input type="submit" class="btn btn-success">
+                            </form>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        let top_var = document.getElementById('top_move');
+        let loginform = document.getElementById('loginf');
+        let signupform = document.getElementById('signupf');
+        let login_but=document.getElementById('logbutid');
+        let sign_but=document.getElementById('signbutid');
+        let total_col_c=document.getElementById('tot_col_change');
+    
+            top_var.style.left = "0px";
+            loginform.style.left = "30px";
+            signupform.style.left = "800px";
+            login_but.style.color="white";
+            sign_but.style.color="white";
+            total_col_c.style.background="linear-gradient(orange,yellow)"; 
+
+        function loginmove() {
+            top_var.style.left = "0px";
+            loginform.style.left = "30px";
+            signupform.style.left = "800px";
+            total_col_c.style.background="linear-gradient(orange,yellow)";
+            total_col_c.style.transition="0.5s"
+
+        }
+
+        function signupmove() {
+            top_var.style.left = "150px";
+            loginform.style.left = "-600px"; 
+            signupform.style.left = "30px"; 
+            total_col_c.style.background="linear-gradient(red,violet)";
+            signupform.style.transition="0.5s"
+            total_col_c.style.transition="0.5s"
+        }
+
+    </script>
+    
+</body>
+</html>

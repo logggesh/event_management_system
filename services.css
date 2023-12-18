@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Poppins:wght@300&display=swap');
+body{
+    background: #222;
+}
+.text-design{
+    font-family: service;
+}
+.text-des-move{
+    margin-top: 80px !important;
+}
+.para{
+    font-size: medium;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px !important;
+}
+.wed-img{
+    height: 500px !important;
+    width: 500px !important;
+}
+.img-hold1{
+    height: 500px !important;
+    width: 500px !important;
+    background-image: url('images/wedding.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+a{
+    text-decoration: none;
+}
+.marriage-event{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px !important;
+    color: white;
+    font-family: lato,sans-serif;
+    display: none;
+    transition: 0.5s;
+}
+.img-hold1:hover .marriage-event{
+    display: block;
+    position: relative;
+    height: 500px !important;
+    width: 500px !important;
+    color: white;
+    transition: 5s;
+    backdrop-filter: blur(5px);
+}
+@font-face {
+    font-family: service;
+    src: url('fonts/service-font.ttf');
+}
+@font-face {
+    font-family: paragraph;
+    src: url('fonts/para.ttf');
+}
